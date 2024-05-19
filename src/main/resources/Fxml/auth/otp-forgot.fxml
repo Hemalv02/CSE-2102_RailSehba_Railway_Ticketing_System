@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oopporject.railsheba.controller.auth.OTPForgot">
+    <children>
+        <TextField fx:id="otpFld" layoutX="122.0" layoutY="274.0" prefHeight="40.0" prefWidth="291.0" promptText="Enter OTP Code" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+        <Button fx:id="btnOTPVerify" layoutX="122.0" layoutY="321.0" minHeight="35.0" mnemonicParsing="false" onAction="#onOTPVerify" prefHeight="40.0" prefWidth="291.0" style="-fx-background-color: #006747; -fx-border-radius: 4px; -fx-cursor: pointer;" text="Verify OTP" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnBack" layoutX="24.0" layoutY="32.0" minHeight="35.0" mnemonicParsing="false" onAction="#onBack" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #006747; -fx-border-radius: 4px; -fx-cursor: pointer;" text="Back" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label layoutX="122.0" layoutY="91.0" text="Forgot Password">
+            <font>
+                <Font size="41.0" />
+            </font>
+        </Label>
+        <Label fx:id="name11" layoutX="122.0" layoutY="232.0" text="Enter Your OTP:">
+            <font>
+                <Font size="26.0" />
+            </font>
+        </Label>
+      <Label layoutX="122.0" layoutY="167.0" text="We have sent an OTP code to your email.">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

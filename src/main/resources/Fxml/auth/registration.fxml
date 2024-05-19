@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oopporject.railsheba.controller.auth.Registration">
+    <children>
+        <TextField fx:id="nameFld" layoutX="122.0" layoutY="173.0" prefHeight="35.0" prefWidth="220.0" promptText="Full Name" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+        <TextField fx:id="emailFld" layoutX="462.0" layoutY="173.0" prefHeight="35.0" prefWidth="220.0" promptText="E-Mail Address" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+        <TextField fx:id="nidFld" layoutX="122.0" layoutY="316.0" prefHeight="35.0" prefWidth="220.0" promptText="NID Number" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+        <Button fx:id="btnRegister" layoutX="462.0" layoutY="391.0" minHeight="35.0" mnemonicParsing="false" onAction="#onRegisterButton" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #006747; -fx-border-radius: 4px; -fx-cursor: pointer;" text="Register" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <DatePicker fx:id="datePicker" layoutX="122.0" layoutY="391.0" prefHeight="35.0" prefWidth="220.0" promptText="Select date of birth" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+        <Label fx:id="name" layoutX="122.0" layoutY="147.0" text="Name">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="Mobile" layoutX="122.0" layoutY="224.0" text="Number">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="email" layoutX="462.0" layoutY="147.0" prefWidth="46.0" text="E-Mail">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="nid" layoutX="122.0" layoutY="298.0" text="NID">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="dob" layoutX="122.0" layoutY="371.0" text="Date of birth">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnBack" layoutX="24.0" layoutY="32.0" minHeight="35.0" mnemonicParsing="false" onAction="#onBack" prefHeight="35.0" prefWidth="78.0" style="-fx-background-color: #006747; -fx-border-radius: 4px; -fx-cursor: pointer;" text="Back" textFill="WHITE">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+      <PasswordField fx:id="passFld" layoutX="462.0" layoutY="244.0" minHeight="35.0" minWidth="220.0" promptText="Password" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+      <PasswordField fx:id="confirmPassFld" layoutX="462.0" layoutY="316.0" minHeight="35.0" minWidth="220.0" promptText="Confirm Password" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+      <Label fx:id="email1" layoutX="462.0" layoutY="298.0" text="Confirm Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="email11" layoutX="462.0" layoutY="224.0" text="Password">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="termsCheck" layoutX="463.0" layoutY="362.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="263.0" text="I have agreed to the all the terms." />
+      <Label layoutX="122.0" layoutY="91.0" text="Registration">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberFld" layoutX="122.0" layoutY="250.0" prefHeight="35.0" prefWidth="220.0" promptText="Phone Number" style="-fx-background-color: #F5F8F9; -fx-border-color: gray; -fx-border-radius: 4px;" />
+    </children>
+</AnchorPane>

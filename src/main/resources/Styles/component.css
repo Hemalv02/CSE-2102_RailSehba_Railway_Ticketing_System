@@ -1,0 +1,26 @@
+/* styles.css */
+
+.jfx-button {
+    -fx-background-color: #00b47c; /* Default color */
+    -fx-text-fill: white; /* Text color */
+}
+
+.jfx-button:hover {
+    -fx-background-color: #004e35; /* Color when hovered */
+}
+
+.jfx-button:pressed {
+    -fx-background-color: #003424; /* Color when clicked */
+}
+
+.button {
+    -fx-background-color: #006747;
+    -fx-border-radius: 4px;
+    -fx-cursor: pointer;
+}
+
+.input {
+    -fx-background-color: #F5F8F9;
+    -fx-border-color: gray;
+    -fx-border-radius: 4px;
+}

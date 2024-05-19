@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oopporject.railsheba.controller.user.DashBoard">
+   <top>
+      <Pane prefHeight="68.0" prefWidth="800.0" style="-fx-background-color: #00f0a6;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="btnLogout" layoutX="678.0" layoutY="13.0" prefHeight="43.0" prefWidth="108.0" text="LogOut" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="434.0" prefWidth="186.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutY="-1.0" prefHeight="436.0" prefWidth="180.0">
+               <children>
+                  <JFXButton fx:id="btnPurchaseTicket" prefHeight="47.0" prefWidth="180.0" text="Purchase Ticket" textFill="WHITE" />
+                  <JFXButton fx:id="btnVerifyTicket" layoutX="10.0" layoutY="10.0" prefHeight="47.0" prefWidth="180.0" text="Verify Ticket" textFill="WHITE" />
+                  <JFXButton fx:id="btnProfile" layoutX="10.0" layoutY="57.0" prefHeight="47.0" prefWidth="180.0" text="Profile" textFill="WHITE" />
+                  <JFXButton fx:id="btnUpdatePassWord" layoutX="10.0" layoutY="104.0" prefHeight="47.0" prefWidth="180.0" text="Update Password" textFill="WHITE" />
+                  <JFXButton fx:id="btnHistory" layoutX="10.0" layoutY="152.0" prefHeight="47.0" prefWidth="180.0" text="Purchase History" textFill="WHITE" />
+                  <JFXButton fx:id="btnTrainInfo" layoutX="10.0" layoutY="199.0" prefHeight="47.0" prefWidth="180.0" text="Train Info" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <StackPane fx:id="stackPaneArea" prefHeight="435.0" prefWidth="617.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
